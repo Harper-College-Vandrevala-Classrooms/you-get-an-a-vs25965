@@ -1,2 +1,14 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/5q8vzIyP)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=16812147&assignment_repo_type=AssignmentRepo)
+You-get-an-a Lab
+
+**Program organization: There are two classes Gradebook class where implements all four parts of the Problem Statement. Records class where there are Four methods:
+
+void addStudent (const string& lastname, const string& name, const string& Id); This method is in charge of adding students to the list of students in the class. The list is stored in a vector called: studentList.
+void addTask( const string& nameTask, const int& totalPoints); This method is in charge of adding 'nameTask' to the AssigmentList vector and 'totalPoints' to the TotalPoints vectors. (they are stored independently for direct and easy access to each of them when required)
+int addGrade(const string& name, const int& earnedPoints, const string& namedTask);
+This method does a linear search to make sure there a student with that 'name' and to make sure there is a assigment name like the 'namedTask' value.
+If student and assignment where found then it will send the name of the student, the namedTask and the earnedpoints to a map (Called grades) to format it nicely.
+if student or assignment are not found there will be a displayed message in the console respectively.
+void displayList() const; There are two list display in the console:
+studentList: it will show all students added, name and id.
+grades map : t will show just the students that have an assignment and a grade related to their name.
+**Get things set up: To be able to run the program, clone this reposotory in your local machine.
